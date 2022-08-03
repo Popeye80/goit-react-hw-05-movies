@@ -1,10 +1,9 @@
 import axios from 'axios';
-const KEY = '1e3bd345eb5d29ac0f4521d096bb0e9d';
+const KEY = '170e63a9b5389fb34c65bea351cdb965';
 export const fetchTrendsMovie = () => {
   return axios.get(
     `https://api.themoviedb.org/3/trending/all/day?api_key=${KEY}`
   );
-  // .then(res => console.log(res));
 };
 
 export const fetchSearchFilms = value => {

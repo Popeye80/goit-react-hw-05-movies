@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const FormWrapp = styled.div`
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +30,6 @@ const Input = styled.input`
 export const FormSearch = ({ value, onSubmit }) => {
   const [searchValue, setSearchValue] = useState(value);
 
-  // const onSumbit = e => {
-  //   e.preventDefault();
-  //   // console.log(e.currentTarget.searchValue.value);
-  //   onSetState(e.currentTarget.searchValue.value);
-  // };
   return (
     <FormWrapp>
       <Form onSubmit={onSubmit}>

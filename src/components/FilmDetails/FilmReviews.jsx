@@ -11,7 +11,7 @@ const FilmReviews = () => {
       .then(res => {
         setReviews(res.data.results);
       })
-      .catch(erorr => console.log(erorr));
+      .catch(error => console.log(error));
   }, [moviesId]);
 
   if (!reviews) {
